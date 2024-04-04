@@ -1,0 +1,75 @@
+uczen@DESKTOP-3TVNO84 MINGW64 ~/Desktop
+$ mkdir 3L
+
+uczen@DESKTOP-3TVNO84 MINGW64 ~/Desktop
+$ cd 3L/
+
+uczen@DESKTOP-3TVNO84 MINGW64 ~/Desktop/3L
+$ touch 1.html
+
+uczen@DESKTOP-3TVNO84 MINGW64 ~/Desktop/3L
+$ touch 2.css
+
+uczen@DESKTOP-3TVNO84 MINGW64 ~/Desktop/3L
+$ touch 3.php
+
+uczen@DESKTOP-3TVNO84 MINGW64 ~/Desktop/3L
+$ vim 1.html
+
+uczen@DESKTOP-3TVNO84 MINGW64 ~/Desktop/3L
+$ git config --global user.name = "SartenDev"
+
+uczen@DESKTOP-3TVNO84 MINGW64 ~/Desktop/3L
+$ git config --global user.email = matiskow.777@gmail.com
+
+uczen@DESKTOP-3TVNO84 MINGW64 ~/Desktop/3L
+$ git init
+Initialized empty Git repository in C:/Users/uczen/Desktop/3L/.git/
+
+uczen@DESKTOP-3TVNO84 MINGW64 ~/Desktop/3L (master)
+$ git add .
+warning: in the working copy of '1.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '2.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '3.php', LF will be replaced by CRLF the next time Git touches it
+
+uczen@DESKTOP-3TVNO84 MINGW64 ~/Desktop/3L (master)
+$ git commit -m "initial"
+[master (root-commit) 17e061e] initial
+ 4 files changed, 22 insertions(+)
+ create mode 100644 1.html
+ create mode 100644 2.css
+ create mode 100644 3.php
+ create mode 100644 4.jpg
+
+uczen@DESKTOP-3TVNO84 MINGW64 ~/Desktop/3L (master)
+$ git branch -M main
+
+uczen@DESKTOP-3TVNO84 MINGW64 ~/Desktop/3L (main)
+$ git remote add origin https://github.com/SartenDev/Zaliczenie.git
+
+uczen@DESKTOP-3TVNO84 MINGW64 ~/Desktop/3L (main)
+$ git push -u origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 7.06 KiB | 7.06 MiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/SartenDev/Zaliczenie.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+uczen@DESKTOP-3TVNO84 MINGW64 ~/Desktop/3L (main)
+$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 940 bytes | 94.00 KiB/s, done.
+From https://github.com/SartenDev/Zaliczenie
+   17e061e..b8d105a  main       -> origin/main
+Updating 17e061e..b8d105a
+Fast-forward
+ 5.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 5.txt
